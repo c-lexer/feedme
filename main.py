@@ -11,7 +11,7 @@ kurve_menu = Kurve().get_menus()
 krall_menu = Krall().get_menus()
 karli_menu = Karli().get_menus()
 
-f = open("index.html", "a")
+f = open("index.html", "w")
 f.write(
     """
 <!DOCTYPE html>
@@ -49,9 +49,9 @@ for tag in ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"]:
             kurve_menu[tag][1],
             krall_menu[tag][0],
             krall_menu[tag][1],
-            karli_menu[tag][0],
-            karli_menu[tag][1],
             karli_menu[tag][2],
+            karli_menu[tag][1],
+            karli_menu[tag][0],
         )
     )
 

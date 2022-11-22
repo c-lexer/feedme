@@ -82,5 +82,5 @@ class Krall:
         return data
 
     def __del__(self):
-        if os.path.exists("Krall.pdf"):
-            os.remove("Krall.pdf")
+        if os.path.exists("Menu.pdf"):
+            os.remove("Menu.pdf")
